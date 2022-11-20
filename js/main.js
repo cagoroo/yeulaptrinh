@@ -213,33 +213,33 @@ if (!hasCurrent) {
 
 
 
-$('.widget .category-list ul > li').each(function () {
+// $('.widget .category-list ul > li').each(function () {
 
 
 
 
-	url = window.location.href;
-	li_href= $(this)[0].firstElementChild.href;
-	url_arr = url.split("/")[5]
-	li_href_arr=li_href.split("/")[5]
+// 	url = window.location.href;
+// 	li_href= $(this)[0].firstElementChild.href;
+// 	url_arr = url.split("/")[5]
+// 	li_href_arr=li_href.split("/")[5]
 
 
 	
 
-	if( url.split("/")[3] != li_href.split("/")[3] ){
-    //console.log(url.split("/")[3]);
-		$(this)[0].style.display ="none";
+// 	if( url.split("/")[3] != li_href.split("/")[3] ){
+//     //console.log(url.split("/")[3]);
+// 		$(this)[0].style.display ="none";
 
-	}
+// 	}
 
 
 
-	if(url_arr == li_href_arr && url_arr !="" & li_href_arr!=""){
-		$(this).addClass('current_page_item');
-	} else {
-		$(this).removeClass('current_page_item');
-	}
-});
+// 	if(url_arr == li_href_arr && url_arr !="" & li_href_arr!=""){
+// 		$(this).addClass('current_page_item');
+// 	} else {
+// 		$(this).removeClass('current_page_item');
+// 	}
+// });
 
 
 $('#main-navigation').on('click', function(){
